@@ -7,11 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MovieViewController: UIViewController {
+    
+    private lazy var viewModel = MovieViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        viewModel.fetchMovieResults()
+        
     }
 
 
