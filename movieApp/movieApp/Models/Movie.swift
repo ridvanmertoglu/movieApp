@@ -12,6 +12,7 @@ final class Response: Decodable {
 }
 
 final class Movie: Decodable {
+    var id: Int
     var original_title: String
     var overview: String
     var release_date: String

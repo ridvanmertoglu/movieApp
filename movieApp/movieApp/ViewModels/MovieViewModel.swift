@@ -31,7 +31,6 @@ final class MovieViewModel: StatefulViewModel<MovieViewModelState.Change> {
                 self?.emit(change: .failed(message: "Data is empty."))
                 return
             }
-         
             self?.movies = Response.decodeObject(data: data)
             self?.emit(change: .succeeded)
             
